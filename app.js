@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     const cardArray = [
         {
             name: 'fries', 
@@ -54,12 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createBoard(){
         for(let i = 0; i < cardArray.length; i++){
-            let card = document.createElement('img')
+            var card = document.createElement('img')
             card.setAttribute('src', 'images/blank.png')
             card.setAttribute('data-id', i)
             // card.addEventListener('click', flipcard)
             grid.appendChild(card)
         }
+    }
+    //check for matches
+
+    //flip your card
+    function flipCard(){
+        
     }
     createBoard()
 })
